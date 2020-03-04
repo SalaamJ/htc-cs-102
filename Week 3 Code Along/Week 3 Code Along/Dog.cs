@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Week_3_Code_Along
+namespace Week_3_code_along
 {
     class Dog
     {
@@ -20,7 +20,7 @@ namespace Week_3_Code_Along
 
         public void SayName()
         {
-            MessageBox.Show("My name is Sir " + Name + " Von Strauss.");
+            MessageBox.Show("My name is " + Name);
         }
     }
 }
