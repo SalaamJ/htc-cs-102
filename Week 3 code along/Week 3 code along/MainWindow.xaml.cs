@@ -37,6 +37,11 @@ namespace Week_3_code_along
             Dog dog = new Dog();
             dog.Name = dogName;
             dog.SayName();
+
+            Goose goose = new Goose();
+            goose.Name = "Honquefreid";
+            goose.Age = 69;
+            goose.AttackDamage = 8675309;
         }
     }
 }
