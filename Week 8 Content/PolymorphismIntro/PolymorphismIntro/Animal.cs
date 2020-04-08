@@ -16,5 +16,7 @@ namespace PolymorphismIntro
         {
             MessageBox.Show("My name is " + Name);
         }
+
+        public virtual void Speak(){
     }
 }
