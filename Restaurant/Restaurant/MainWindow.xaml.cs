@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Week_3_code_along
+namespace Restaurant
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,25 +23,6 @@ namespace Week_3_code_along
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Bark_Button_Click(object sender, RoutedEventArgs e)
-        {
-            Dog dog = new Dog();
-            dog.Bark();
-        }
-
-        private void SayName_Button_Click(object sender, RoutedEventArgs e)
-        {
-            string dogName = DogName.Text;
-            Dog dog = new Dog();
-            dog.Name = dogName;
-            dog.SayName();
-
-            Goose goose = new Goose();
-            goose.Name = "Honquefreid";
-            goose.Age = 69;
-            goose.AttackDamage = 8675309;
         }
     }
 }
