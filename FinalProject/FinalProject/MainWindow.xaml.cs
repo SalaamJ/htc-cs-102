@@ -28,7 +28,7 @@ namespace AnimeList
             InitializeComponent();
 
             AnimeList = new ObservableCollection<Anime>();
-            lvAnimes.ItemsSource = AnimeList;
+            LvAnimes.ItemsSource = AnimeList;
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
@@ -50,9 +50,9 @@ namespace AnimeList
             }
         }
 
-        private void lvMovies_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void LvAnimes_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            Anime selectedAnime = lvAnimes.SelectedItem as Anime;
+            Anime selectedAnime = LvAnimes.SelectedItem as Anime;
             if (selectedAnime != null)
             {
                 selectedAnime.ShowDetails();

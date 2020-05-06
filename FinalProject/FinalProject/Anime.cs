@@ -5,6 +5,8 @@ namespace AnimeList
 {
     public class Anime
     {
+        private const string V = "Title: ";
+
         public string Title
         {
             get;
@@ -25,10 +27,10 @@ namespace AnimeList
 
         public void ShowDetails()
         {
-            string infoString = "Title: " + this.Title;
-            infoString = "Genre: " + this.Genre;
-            infoString = "Creator: " + this.Creator;
-            MessageBox.Show(infoString);
+            string infoString1 = V + this.Title;
+            infoString1 = "Genre: " + this.Genre;
+            infoString1 = "Creator: " + this.Creator;
+            MessageBox.Show(infoString1);
         }
 
         public Anime(string myTitle, string myGenre, string myCreator)
